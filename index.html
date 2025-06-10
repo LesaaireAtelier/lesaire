@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L'Essaire Atelier</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #111;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h2 {
+      font-size: 2rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .carousel {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      transition: transform 1s ease;
+      width: 400%;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+      flex-shrink: 0;
+    }
+    .about {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .download {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .download a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #111;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>L'Essaire Atelier</h1>
+    <p>Curated to Captivate. Designed to Endure.</p>
+  </header>
+
+  <section class="about">
+    <h2>About</h2>
+    <p><strong>L'Essaire Atelier</strong> is a vision-driven interior consultancy rooted in modern sensibilities and timeless ambition.<br><br>
+    Born from a desire to redefine spaces, we curate interiors that don’t just follow trends — they create them.<br><br>
+    From statement textures to bold silhouettes, every detail we touch is made to last — in form, in function, and in feeling.<br><br>
+    This is where design meets legacy. This is <em>L’Essaire Atelier</em>.</p>
+  </section>
+
+  <section>
+    <h2>Our Projects</h2>
+    <div class="carousel">
+      <div class="slides" id="slides">
+        <img src="https://images.unsplash.com/photo-1615874959474-d609969a9f1b" alt="Project 1">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project 2">
+        <img src="https://images.unsplash.com/photo-1586105251261-72a756497a12" alt="Project 3">
+        <img src="https://images.unsplash.com/photo-1560448070-43259f4f7d65" alt="Project 4">
+      </div>
+    </div>
+  </section>
+
+  <section class="download">
+    <h2>Download Brand Profile</h2>
+    <p>You can download our brand introduction as an HTML file below:</p>
+    <a href="index.html" download>Download Index File</a>
+  </section>
+
+  <script>
+    let index = 0;
+    const slides = document.getElementById("slides");
+    setInterval(() => {
+      index = (index + 1) % 4;
+      slides.style.transform = `translateX(-${index * 100}%)`;
+    }, 3000);
+  </script>
+</body>
+</html>
