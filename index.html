@@ -36,27 +36,45 @@
       padding-bottom: 0.5rem;
       margin-bottom: 1rem;
     }
-    .about {
+    .highlight-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .highlight-box {
+      flex: 1 1 30%;
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .highlight-box h3 {
+      margin-top: 0;
+      color: #333;
+    }
+    .section-content {
       background-color: #fff;
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .philosophy, .process, .faq {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      margin-top: 2rem;
+      margin-bottom: 2rem;
     }
     ul {
-      padding-left: 1.2rem;
+      padding-left: 1.5rem;
     }
-    ul li {
+    blockquote {
+      font-style: italic;
+      background: #eee;
+      padding: 1rem;
+      border-left: 5px solid #999;
+      margin: 1rem 0;
+    }
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+    .faq-item h4 {
       margin-bottom: 0.5rem;
-    }
-    .faq-question {
-      font-weight: bold;
     }
   </style>
 </head>
@@ -64,29 +82,70 @@
   <header>
     <h1>L'Essaire Atelier</h1>
     <p>Curated to Captivate. Designed to Endure.</p>
-  </header>  <section class="about">
+  </header>  <section class="section-content">
     <h2>About</h2>
     <p><strong>L'Essaire Atelier</strong> is a vision-driven interior consultancy rooted in modern sensibilities and timeless ambition.<br><br>
     Born from a desire to redefine spaces, we curate interiors that don’t just follow trends — they create them.<br><br>
     From statement textures to bold silhouettes, every detail we touch is made to last — in form, in function, and in feeling.<br><br>
     This is where design meets legacy. This is <em>L’Essaire Atelier</em>.</p>
-  </section>  <section class="philosophy">
-    <h2>Design Philosophy</h2>
-    <p>We believe in creating more than just beautiful rooms — we shape immersive experiences. Each project begins with understanding the soul of the space and the story it wishes to tell. Our approach marries bold ideas with timeless elegance, ensuring every design evokes emotion and endures the passage of time.</p>
-  </section>  <section class="process">
-    <h2>How We Work</h2>
+  </section>  <section>
+    <h2>Our Approach</h2>
+    <div class="highlight-boxes">
+      <div class="highlight-box">
+        <h3>Innovative Identity</h3>
+        <p>Every space we touch is infused with a unique character — modern yet everlasting.</p>
+      </div>
+      <div class="highlight-box">
+        <h3>Uncompromised Quality</h3>
+        <p>We obsess over craftsmanship and details that withstand time and trends.</p>
+      </div>
+      <div class="highlight-box">
+        <h3>Client-Centric Vision</h3>
+        <p>Your lifestyle, your needs, and your story are always our blueprint.</p>
+      </div>
+    </div>
+  </section>  <section class="section-content">
+    <h2>Our Services</h2>
     <ul>
-      <li><strong>1. Discovery Call</strong> — We begin with understanding your vision, preferences, and spatial needs.</li>
-      <li><strong>2. Concept & Moodboard</strong> — Our team curates an initial aesthetic direction based on your story.</li>
-      <li><strong>3. Design Proposal</strong> — We present detailed layouts, material palettes, and signature touches.</li>
-      <li><strong>4. Execution</strong> — Bringing design to life with trusted partners and premium craftsmanship.</li>
-      <li><strong>5. Final Reveal</strong> — Your new space, perfectly curated — ready to inspire and impress.</li>
+      <li>Interior Concept Development</li>
+      <li>Custom Furniture & Material Selection</li>
+      <li>Space Planning & Layout Optimization</li>
+      <li>Luxury Residential & Commercial Projects</li>
+      <li>Project Management & Execution Oversight</li>
     </ul>
-  </section>  <section class="faq">
+  </section>  <section class="section-content">
+    <h2>Design Philosophy</h2>
+    <p>Our design philosophy is built on the harmony between form and function. We strive to create evocative, intelligent interiors that transcend fads — interiors that become living expressions of those who inhabit them.</p>
+  </section>  <section class="section-content">
+    <h2>How We Work</h2>
+    <ol>
+      <li><strong>Consultation & Briefing</strong> — Understanding your vision and needs.</li>
+      <li><strong>Concept & Moodboarding</strong> — Crafting a creative direction and visual essence.</li>
+      <li><strong>Design Development</strong> — Detailed layouts, materials, finishes, and furniture plans.</li>
+      <li><strong>Execution & Oversight</strong> — Collaborating with contractors to bring the vision to life.</li>
+    </ol>
+  </section>  <section class="section-content">
+    <h2>What Our Clients Say</h2>
+    <blockquote>“L’Essaire transformed my apartment into a sanctuary — elegant, edgy, and undeniably me.” – Karina M.</blockquote>
+    <blockquote>“Their ability to balance aesthetics with practicality is unmatched.” – Thomas R.</blockquote>
+    <blockquote>“A studio that truly listens and delivers beyond expectations.” – Farah L.</blockquote>
+  </section>  <section class="section-content">
     <h2>Frequently Asked Questions</h2>
-    <p><span class="faq-question">Q: How long does a typical project take?</span><br>A: It depends on the scale, but most projects range from 4 to 12 weeks.</p>
-    <p><span class="faq-question">Q: Can I request custom materials or designs?</span><br>A: Absolutely. We specialize in bespoke concepts tailored to your taste.</p>
-    <p><span class="faq-question">Q: Which areas do you serve?</span><br>A: We’re based in Indonesia, but we offer remote consultations worldwide.</p>
+    <div class="faq-item">
+      <h4>What’s your design style?</h4>
+      <p>We lean towards modern, edgy luxury — but always adapt our creativity to reflect each client’s unique personality.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Can I hire you for just design, not full execution?</h4>
+      <p>Absolutely. We offer design-only packages for clients who already have contractors or want flexibility.</p>
+    </div>
+    <div class="faq-item">
+      <h4>How long does a project usually take?</h4>
+      <p>It depends on the scope, but residential projects typically take 2–6 months from concept to handover.</p>
+    </div>
   </section>
+  <footer>
+    © 2025 L'Essaire Atelier — Modern Interior Consultancy. Crafted with elegance.  
+  </footer>
 </body>
 </html>
