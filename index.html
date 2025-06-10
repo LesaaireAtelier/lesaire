@@ -3,90 +3,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L'Essaire Atelier</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
-      background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
+      background-color: #fdfbfa;
       color: #222;
       scroll-behavior: smooth;
     }
     header {
-      background-color: #111;
+      background-color: #1a1a1a;
       color: #fff;
-      padding: 2rem;
+      padding: 2.5rem 2rem;
       text-align: center;
-      animation: fadeIn 2s ease;
     }
     header h1 {
       margin: 0;
-      font-size: 3rem;
-      letter-spacing: 1px;
+      font-size: 3.2rem;
+      letter-spacing: 2px;
     }
     header p {
-      font-size: 1.2rem;
-      color: #aaa;
+      font-size: 1.3rem;
+      color: #bbb;
     }
     section {
       padding: 3rem 2rem;
       max-width: 1000px;
       margin: 0 auto;
-      animation: fadeIn 1.5s ease-in-out;
     }
     h2 {
-      font-size: 2rem;
+      font-size: 2.2rem;
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
     }
-    .about, .section-box {
+    .about, .philosophy, .how, .services, .testimonials, .faq {
       background-color: #fff;
       padding: 2rem;
       border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
       margin-bottom: 2rem;
     }
-    .carousel {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
-    .slides {
-      display: flex;
-      transition: transform 1s ease;
-      width: 400%;
-    }
-    .slides img {
-      width: 100%;
-      height: auto;
-      flex-shrink: 0;
+    .cta {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 3rem 2rem;
       border-radius: 10px;
     }
-    ul {
-      padding-left: 1.5rem;
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    li {
-      margin-bottom: 0.5rem;
+    .cta p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #ccc;
     }
-    .icon-list i {
-      margin-right: 10px;
-      color: #444;
-    }
-    .faq summary {
-      cursor: pointer;
+    .cta a {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background-color: #fff;
+      color: #000;
+      text-decoration: none;
       font-weight: bold;
-      margin: 0.5rem 0;
+      border-radius: 30px;
+      transition: all 0.3s ease;
     }
-    .faq p {
-      margin: 0.5rem 0 1rem 1rem;
+    .cta a:hover {
+      background-color: #ddd;
     }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
+    .quote {
+      background-color: #fff;
+      text-align: center;
+      padding: 3rem 2rem;
+      font-style: italic;
+      font-size: 1.5rem;
+      color: #333;
+      border-radius: 10px;
+      margin: 2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
@@ -100,56 +101,38 @@
     Born from a desire to redefine spaces, we curate interiors that don’t just follow trends — they create them.<br><br>
     From statement textures to bold silhouettes, every detail we touch is made to last — in form, in function, and in feeling.<br><br>
     This is where design meets legacy. This is <em>L’Essaire Atelier</em>.</p>
-  </section>  <section>
-    <h2>Our Projects</h2>
-    <div class="carousel">
-      <div class="slides" id="slides">
-        <img src="https://images.unsplash.com/photo-1615874959474-d609969a9f1b" alt="Project 1">
-        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Project 2">
-        <img src="https://images.unsplash.com/photo-1586105251261-72a756497a12" alt="Project 3">
-        <img src="https://images.unsplash.com/photo-1560448070-43259f4f7d65" alt="Project 4">
-      </div>
-    </div>
-  </section>  <section class="section-box">
-    <h2><i class="fas fa-couch"></i> Our Services</h2>
-    <ul class="icon-list">
-      <li><i class="fas fa-pencil-ruler"></i> Interior Design Consultation</li>
-      <li><i class="fas fa-palette"></i> Moodboarding & Concept Development</li>
-      <li><i class="fas fa-ruler-combined"></i> Space Planning & Styling</li>
-      <li><i class="fas fa-hammer"></i> Custom Furniture & Finishing</li>
+  </section>  <section class="philosophy">
+    <h2>Design Philosophy</h2>
+    <p>We believe every space should speak. Our designs whisper elegance, shout individuality, and echo through time. Through seamless fusion of contemporary elements and classic sophistication, we create interiors that inspire and impress.</p>
+  </section>  <section class="how">
+    <h2>How We Work</h2>
+    <p>Our process starts with you — your vision, your lifestyle, your story. We combine research, intuition, and artistic collaboration to craft solutions that feel both revolutionary and personal. From the first sketch to the final touch, we're with you all the way.</p>
+  </section>  <section class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Interior Design & Styling</li>
+      <li>Concept & Moodboard Development</li>
+      <li>Luxury Residential Projects</li>
+      <li>Retail and Commercial Space Design</li>
+      <li>Custom Furniture & Decor Solutions</li>
     </ul>
-  </section>  <section class="section-box">
-    <h2><i class="fas fa-brain"></i> Design Philosophy</h2>
-    <p>We believe in soulful minimalism, the elegance of restraint, and the power of thoughtful design. Our process blends emotional depth and spatial precision to achieve interiors that inspire and endure.</p>
-  </section>  <section class="section-box">
-    <h2><i class="fas fa-project-diagram"></i> How We Work</h2>
-    <p>We collaborate with you at every step — from initial briefing, moodboard creation, spatial flow mapping, to sourcing bespoke elements — ensuring a cohesive and captivating result.</p>
-  </section>  <section class="section-box">
-    <h2><i class="fas fa-comment-dots"></i> What Our Clients Say</h2>
-    <p>“Absolutely in love with our transformed space — elegant, intentional, and truly reflective of who we are.”<br>
-    – Amelia R., Jakarta</p>
-    <p>“The team’s attention to detail and vision blew us away. Worth every cent.”<br>
-    – M. Gunawan, Surabaya</p>
-  </section>  <section class="section-box faq">
-    <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
-    <details>
-      <summary>How long does a project typically take?</summary>
-      <p>Most projects take between 4 to 12 weeks depending on size and scope.</p>
-    </details>
-    <details>
-      <summary>Do you work on residential or commercial projects?</summary>
-      <p>We handle both residential and boutique commercial projects.</p>
-    </details>
-    <details>
-      <summary>Can we customize every element?</summary>
-      <p>Yes, we specialize in bespoke solutions tailored to your lifestyle and brand identity.</p>
-    </details>
-  </section>  <script>
-    let index = 0;
-    const slides = document.getElementById("slides");
-    setInterval(() => {
-      index = (index + 1) % 4;
-      slides.style.transform = `translateX(-${index * 100}%)`;
-    }, 3000);
-  </script></body>
+  </section>  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <p><em>“L’Essaire turned our blank walls into art. The experience was seamless, the result: unforgettable.”</em><br>– M. Andini</p>
+    <p><em>“Every element feels like it belongs — and more importantly, like it belongs to us.”</em><br>– R. Hakim</p>
+  </section>  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>Q: Do you offer online consultations?</strong><br>A: Absolutely! We work globally and offer virtual design services tailored to your space.</p>
+    <p><strong>Q: How involved will I be in the design process?</strong><br>A: As involved as you want to be. We believe in collaboration, and your voice shapes the space.</p>
+    <p><strong>Q: What’s your design style?</strong><br>A: Modern, elegant, and bold — always refined to suit the soul of your space.</p>
+  </section>  <section class="cta">
+    <h2>Let’s Design Something Timeless Together</h2>
+    <p>Have a project in mind or just want to chat about design? We’re just a message away.</p>
+    <a href="https://wa.me/6283144118772" target="_blank">Connect on WhatsApp</a>
+  </section>  <section class="quote">
+    “We don’t just shape rooms — we carve poetry into every wall, every shadow, every silence.”
+  </section>  <footer>
+    © 2025 L'Essaire Atelier. All Rights Reserved.
+  </footer>
+</body>
 </html>
