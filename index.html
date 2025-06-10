@@ -116,10 +116,80 @@
       <li>Retail and Commercial Space Design</li>
       <li>Custom Furniture & Decor Solutions</li>
     </ul>
-  </section>  <section class="testimonials">
-    <h2>What Our Clients Say</h2>
-    <p><em>“L’Essaire turned our blank walls into art. The experience was seamless, the result: unforgettable.”</em><br>– M. Andini</p>
-    <p><em>“Every element feels like it belongs — and more importantly, like it belongs to us.”</em><br>– R. Hakim</p>
+  <section class="testimonials">
+  <h2>What Our Clients Say</h2>
+  <div class="testimonial-scroll">
+    <div class="testimonial-card">
+      <p>"L’Essaire Atelier transformed my apartment into a sanctuary. Truly visionary."</p>
+      <h4>— Amara T., Jakarta</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Every detail was crafted with intention. Elegant, bold, unforgettable."</p>
+      <h4>— Felix M., Surabaya</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"They didn't just design my space — they understood my lifestyle."</p>
+      <h4>— Nadine R., Bali</h4>
+    </div>
+    <div class="testimonial-card">
+      <p>"Timeless design, artistic vision, and flawless execution."</p>
+      <h4>— Reza K., Bandung</h4>
+    </div>
+  </div>
+</section>
+
+<style>
+  .testimonials {
+    background-color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+
+  .testimonial-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .testimonial-card {
+    flex: 0 0 80%;
+    background-color: #fdfdfd;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    scroll-snap-align: start;
+    min-width: 300px;
+    transition: transform 0.3s ease;
+  }
+
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .testimonial-card p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 1rem;
+  }
+
+  .testimonial-card h4 {
+    font-weight: normal;
+    color: #777;
+  }
+
+  /* Hide scrollbar on mobile */
+  .testimonial-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .testimonial-scroll {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+</style>
   </section>  <section class="faq">
     <h2>Frequently Asked Questions</h2>
     <p><strong>Q: Do you offer online consultations?</strong><br>A: Absolutely! We work globally and offer virtual design services tailored to your space.</p>
