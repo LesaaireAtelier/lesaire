@@ -3,78 +3,66 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>L'Essaire Atelier</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #f4f4f4;
-      color: #222;
+      background-color: #ece8e1;
+      color: #1e1e1e;
     }
     header {
-      background-color: #111;
+      background: linear-gradient(135deg, #1e1e1e, #2c2c2c);
       color: #fff;
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
     }
     header h1 {
       margin: 0;
-      font-size: 3rem;
-      letter-spacing: 1px;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
     }
     header p {
-      font-size: 1.2rem;
-      color: #aaa;
+      font-size: 1.3rem;
+      color: #c2b8a3;
+      margin-top: 1rem;
     }
     section {
-      padding: 3rem 2rem;
-      max-width: 1000px;
+      padding: 4rem 2rem;
+      max-width: 1100px;
       margin: 0 auto;
     }
     h2 {
       font-size: 2rem;
-      border-bottom: 2px solid #ccc;
+      font-family: 'Playfair Display', serif;
+      border-bottom: 2px solid #bfa67a;
       padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+      color: #2c2c2c;
     }
-    .highlight-boxes {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      margin-top: 2rem;
+    .carousel {
+      display: none;
     }
-    .highlight-box {
-      flex: 1 1 30%;
+    .about, .section-box {
       background-color: #fff;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    .highlight-box h3 {
-      margin-top: 0;
-      color: #333;
-    }
-    .section-content {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 2.5rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
       margin-bottom: 2rem;
     }
-    ul {
-      padding-left: 1.5rem;
+    .section-box ul {
+      padding-left: 1.2rem;
     }
-    blockquote {
-      font-style: italic;
-      background: #eee;
-      padding: 1rem;
-      border-left: 5px solid #999;
-      margin: 1rem 0;
+    .section-box ul li {
+      margin-bottom: 0.7rem;
     }
-    .faq-item {
-      margin-bottom: 1.5rem;
-    }
-    .faq-item h4 {
-      margin-bottom: 0.5rem;
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: #1e1e1e;
+      color: #aaa;
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -82,70 +70,44 @@
   <header>
     <h1>L'Essaire Atelier</h1>
     <p>Curated to Captivate. Designed to Endure.</p>
-  </header>  <section class="section-content">
+  </header>  <section class="about">
     <h2>About</h2>
     <p><strong>L'Essaire Atelier</strong> is a vision-driven interior consultancy rooted in modern sensibilities and timeless ambition.<br><br>
     Born from a desire to redefine spaces, we curate interiors that don’t just follow trends — they create them.<br><br>
     From statement textures to bold silhouettes, every detail we touch is made to last — in form, in function, and in feeling.<br><br>
     This is where design meets legacy. This is <em>L’Essaire Atelier</em>.</p>
-  </section>  <section>
-    <h2>Our Approach</h2>
-    <div class="highlight-boxes">
-      <div class="highlight-box">
-        <h3>Innovative Identity</h3>
-        <p>Every space we touch is infused with a unique character — modern yet everlasting.</p>
-      </div>
-      <div class="highlight-box">
-        <h3>Uncompromised Quality</h3>
-        <p>We obsess over craftsmanship and details that withstand time and trends.</p>
-      </div>
-      <div class="highlight-box">
-        <h3>Client-Centric Vision</h3>
-        <p>Your lifestyle, your needs, and your story are always our blueprint.</p>
-      </div>
-    </div>
-  </section>  <section class="section-content">
+  </section>  <section class="section-box">
     <h2>Our Services</h2>
     <ul>
-      <li>Interior Concept Development</li>
-      <li>Custom Furniture & Material Selection</li>
-      <li>Space Planning & Layout Optimization</li>
-      <li>Luxury Residential & Commercial Projects</li>
-      <li>Project Management & Execution Oversight</li>
+      <li>Interior Design Consultation</li>
+      <li>Space Planning and Styling</li>
+      <li>Custom Furniture and Material Curation</li>
+      <li>3D Visualization & Moodboarding</li>
+      <li>Turnkey Project Management</li>
     </ul>
-  </section>  <section class="section-content">
+  </section>  <section class="section-box">
     <h2>Design Philosophy</h2>
-    <p>Our design philosophy is built on the harmony between form and function. We strive to create evocative, intelligent interiors that transcend fads — interiors that become living expressions of those who inhabit them.</p>
-  </section>  <section class="section-content">
+    <p>We believe in spaces that reflect bold individuality while standing the test of time. Our approach blends artistic expression, functional flow, and curated aesthetics to shape atmospheres that speak volumes.</p>
+  </section>  <section class="section-box">
     <h2>How We Work</h2>
-    <ol>
-      <li><strong>Consultation & Briefing</strong> — Understanding your vision and needs.</li>
-      <li><strong>Concept & Moodboarding</strong> — Crafting a creative direction and visual essence.</li>
-      <li><strong>Design Development</strong> — Detailed layouts, materials, finishes, and furniture plans.</li>
-      <li><strong>Execution & Oversight</strong> — Collaborating with contractors to bring the vision to life.</li>
-    </ol>
-  </section>  <section class="section-content">
-    <h2>What Our Clients Say</h2>
-    <blockquote>“L’Essaire transformed my apartment into a sanctuary — elegant, edgy, and undeniably me.” – Karina M.</blockquote>
-    <blockquote>“Their ability to balance aesthetics with practicality is unmatched.” – Thomas R.</blockquote>
-    <blockquote>“A studio that truly listens and delivers beyond expectations.” – Farah L.</blockquote>
-  </section>  <section class="section-content">
-    <h2>Frequently Asked Questions</h2>
-    <div class="faq-item">
-      <h4>What’s your design style?</h4>
-      <p>We lean towards modern, edgy luxury — but always adapt our creativity to reflect each client’s unique personality.</p>
-    </div>
-    <div class="faq-item">
-      <h4>Can I hire you for just design, not full execution?</h4>
-      <p>Absolutely. We offer design-only packages for clients who already have contractors or want flexibility.</p>
-    </div>
-    <div class="faq-item">
-      <h4>How long does a project usually take?</h4>
-      <p>It depends on the scope, but residential projects typically take 2–6 months from concept to handover.</p>
-    </div>
-  </section>
-  <footer>
-    © 2025 L'Essaire Atelier — Modern Interior Consultancy. Crafted with elegance.  
+    <ul>
+      <li><strong>Discovery:</strong> Understanding your vision, lifestyle, and taste.</li>
+      <li><strong>Concept Development:</strong> Creating visual blueprints and curated materials.</li>
+      <li><strong>Execution:</strong> Bringing the design to life with meticulous attention.</li>
+    </ul>
+  </section>  <section class="section-box">
+    <h2>What Customers Say</h2>
+    <p><em>“L’Essaire didn’t just design our living room—they transformed how we feel about our home.”</em><br>– Amelia R., Surabaya</p>
+    <p><em>“Every guest asks who did our interiors. We proudly say: L’Essaire Atelier.”</em><br>– Denny H., Jakarta</p>
+  </section>  <section class="section-box">
+    <h2>Frequently Asked Questions (FAQ)</h2>
+    <ul>
+      <li><strong>How long does a typical project take?</strong><br>Depending on size and scope, anywhere from 4 to 12 weeks.</li>
+      <li><strong>Can you work with my existing furniture?</strong><br>Absolutely. We’re experts in blending old with new seamlessly.</li>
+      <li><strong>Do you only work in Surabaya?</strong><br>No, we work across Indonesia, with select international projects on request.</li>
+    </ul>
+  </section>  <footer>
+    &copy; 2025 L'Essaire Atelier. Crafted with vision, designed with purpose.
   </footer>
 </body>
 </html>
